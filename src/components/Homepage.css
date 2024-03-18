@@ -1,0 +1,58 @@
+/* Homepage.css */
+
+.homepage-container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  .homepage-header .title {
+    text-align: center;
+    font-size: 2.5em;
+    color: white;
+    margin-bottom: 0.5em;
+  }
+  
+  .homepage-header .subtitle {
+    text-align: center;
+    font-size: 1.2em;
+    color: white;
+    margin-bottom: 2em;
+  }
+  
+  .donation-progress-section {
+    background-color: #ecf0f1;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 2em;
+  }
+  
+  .donation-progress-section h2 {
+    color: #2c3e50;
+    margin-bottom: 1em;
+  }
+  
+  .donation-progress-bar {
+    width: 100%;
+    height: 20px;
+    border-radius: 10px;
+    -webkit-appearance: none;
+    appearance: none;
+  }
+  
+  .donation-progress-bar::-webkit-progress-bar {
+    background-color: #bdc3c7;
+    border-radius: 10px;
+  }
+  
+  .donation-progress-bar::-webkit-progress-value {
+    background-color: #2ecc71;
+    border-radius: 10px;
+  }
+  
+  .donation-progress-bar::-moz-progress-bar {
+    background-color: #2ecc71;
+    border-radius: 10px;
+  }
+  
