@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Homepage from './components/Homepage';
@@ -14,6 +15,7 @@ function App() {
         <Route path="/about-us" element={<AboutUs />} />
         <Route path="/get-involved" element={<GetInvolved />} />
         <Route path="/donate" element={<Donate />} />
+        {/* Add additional Routes here as necessary */}
       </Routes>
     </Router>
   );

@@ -1,4 +1,3 @@
-// src/components/GetInvolved.jsx
 import React, { useState } from 'react';
 import Layout from './Layout';
 
@@ -13,25 +12,27 @@ function GetInvolved() {
 
   return (
     <Layout>
-      <h1>Welcome to the Homepage</h1>
-      {<div>
-      <h1>Get Involved</h1>
-      <p>Learn how you can help us make a difference.</p>
-      <form onSubmit={handleSubmit}>
-        <label>
-          Sign up for volunteer opportunities:
-          <input 
-            type="email" 
-            value={email} 
-            onChange={(e) => setEmail(e.target.value)} 
-            required 
-          />
-        </label>
-        <button type="submit">Submit</button>
-      </form>
-    </div>}
+      <div className="container py-5">
+        <h1 className="mb-4">Get Involved</h1>
+        <p className="mb-4">Learn how you can help us make a difference.</p>
+        <form onSubmit={handleSubmit} className="mb-3">
+          <div className="mb-3">
+            <label htmlFor="volunteerEmail" className="form-label">
+              Sign up for volunteer opportunities:
+            </label>
+            <input 
+              type="email"
+              className="form-control"
+              id="volunteerEmail"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              required 
+            />
+          </div>
+          <button type="submit" className="btn btn-success">Submit</button>
+        </form>
+      </div>
     </Layout>
-    
   );
 }
 

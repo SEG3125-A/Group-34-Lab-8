@@ -1,58 +1,37 @@
 /* Homepage.css */
 
-.homepage-container {
-    max-width: 800px;
-    margin: auto;
-    padding: 20px;
-  }
-  
-  .homepage-header .title {
-    text-align: center;
-    font-size: 2.5em;
-    color: white;
-    margin-bottom: 0.5em;
-  }
-  
-  .homepage-header .subtitle {
-    text-align: center;
-    font-size: 1.2em;
-    color: white;
-    margin-bottom: 2em;
-  }
-  
-  .donation-progress-section {
-    background-color: #ecf0f1;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin-top: 2em;
-  }
-  
-  .donation-progress-section h2 {
-    color: #2c3e50;
-    margin-bottom: 1em;
-  }
-  
-  .donation-progress-bar {
-    width: 100%;
-    height: 20px;
-    border-radius: 10px;
-    -webkit-appearance: none;
-    appearance: none;
-  }
-  
-  .donation-progress-bar::-webkit-progress-bar {
-    background-color: #bdc3c7;
-    border-radius: 10px;
-  }
-  
-  .donation-progress-bar::-webkit-progress-value {
-    background-color: #2ecc71;
-    border-radius: 10px;
-  }
-  
-  .donation-progress-bar::-moz-progress-bar {
-    background-color: #2ecc71;
-    border-radius: 10px;
-  }
-  
+/* Styling for the donation progress section */
+.donation-progress-section {
+  text-align: center;
+  margin: 4rem 0;
+}
+
+.donation-progress-section h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+/* Styling for the Bootstrap progress bar */
+.progress {
+  height: 2rem; /* Gives the bar a thicker look for better visibility */
+  background-color: #e9ecef;
+  border-radius: 1rem; /* Rounded corners for a smoother look */
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1); /* Inner shadow for depth */
+  overflow: hidden; /* Ensures the inner bar stays within the rounded corners */
+}
+
+.progress-bar {
+  background-color: #4caf50; /* A rich green color for the filled part */
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent); /* A subtle striped effect */
+  background-size: 1rem 1rem; /* Size of the stripes */
+  transition: width 1s ease-in-out; /* Smooth transition for the bar fill */
+}
+
+/* Text indicating the progress percentage */
+.donation-progress-section p {
+  font-size: 1.2rem;
+  color: #555;
+  margin-top: 0.5rem;
+}

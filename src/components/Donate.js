@@ -1,4 +1,3 @@
-// src/components/Donate.jsx
 import React, { useState } from 'react';
 import Layout from './Layout';
 
@@ -13,25 +12,27 @@ function Donate() {
 
   return (
     <Layout>
-      <h1>Welcome to the Homepage</h1>
-      {<div>
-      <h1>Donate to GreenFuture</h1>
-      <p>Your support is crucial for our ongoing projects.</p>
-      <form onSubmit={handleDonation}>
-        <label>
-          Donation Amount ($):
-          <input 
-            type="number" 
-            value={donationAmount} 
-            onChange={(e) => setDonationAmount(e.target.value)} 
-            required 
-          />
-        </label>
-        <button type="submit">Donate</button>
-      </form>
-    </div>}
+      <div className="container py-5">
+        <h1 className="mb-3">Donate to GreenFuture</h1>
+        <p className="mb-4">Your support is crucial for our ongoing projects.</p>
+        <form onSubmit={handleDonation} className="mb-3">
+          <div className="mb-3">
+            <label htmlFor="donationAmount" className="form-label">
+              Donation Amount ($):
+            </label>
+            <input 
+              type="number" 
+              className="form-control" 
+              id="donationAmount" 
+              value={donationAmount} 
+              onChange={(e) => setDonationAmount(e.target.value)} 
+              required 
+            />
+          </div>
+          <button type="submit" className="btn btn-success">Donate</button>
+        </form>
+      </div>
     </Layout>
-    
   );
 }
 
